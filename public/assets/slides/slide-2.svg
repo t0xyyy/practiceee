@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 580" role="img" aria-label="Практика: Учитесь на реальных задачах">
+ <rect width="980" height="580" fill="#e6e2f7"/>
+ <circle cx="770" cy="100" r="285" fill="#cbb8ff" opacity=".53"/><circle cx="770" cy="100" r="200" fill="none" stroke="#fff" stroke-opacity=".65" stroke-width="3"/>
+ <path d="M650 580Q735 395 980 350V580z" fill="#6456a6" opacity=".13"/>
+ <rect x="460" y="120" width="375" height="285" rx="27" fill="#6456a6" opacity=".12"/>
+ <rect x="440" y="101" width="375" height="285" rx="27" fill="#fff" stroke="#6456a6" stroke-opacity=".18" stroke-width="3"/>
+ <rect x="440" y="101" width="375" height="46" rx="18" fill="#6456a6"/><rect x="440" y="126" width="375" height="21" fill="#6456a6"/>
+ <circle cx="471" cy="124" r="6" fill="#ffd5bf"/><circle cx="492" cy="124" r="6" fill="#f5da89"/><circle cx="513" cy="124" r="6" fill="#a3dec5"/>
+ <rect x="474" y="181" width="118" height="126" rx="16" fill="#e6e2f7"/>
+ <rect x="616" y="186" width="161" height="13" rx="6" fill="#6456a6"/><rect x="616" y="216" width="114" height="9" rx="4" fill="#6456a6" opacity=".35"/><rect x="616" y="243" width="146" height="9" rx="4" fill="#6456a6" opacity=".2"/>
+ <rect x="616" y="274" width="124" height="48" rx="12" fill="#6456a6"/><path d="m655 298 13 13 19-26" stroke="#fff" stroke-width="8" fill="none" stroke-linecap="round"/>
+ <path d="M499 250l29-41 39 42-39 26z" fill="#cbb8ff"/><circle cx="527" cy="222" r="18" fill="#6456a6" opacity=".25"/>
+ <rect x="519" y="337" width="225" height="8" rx="4" fill="#6456a6" opacity=".19"/>
+ <rect x="669" y="328" width="178" height="132" rx="22" fill="#6456a6"/><circle cx="717" cy="371" r="24" fill="#cbb8ff"/><path d="m708 370 8 8 13-17" fill="none" stroke="#6456a6" stroke-width="5" stroke-linecap="round"/><rect x="752" y="358" width="71" height="8" rx="4" fill="#fff"/><rect x="752" y="376" width="50" height="7" rx="4" fill="#fff" opacity=".56"/>
+ <rect x="66" y="72" width="86" height="31" rx="15" fill="#6456a6"/><text x="109" y="93" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif" font-weight="700" font-size="14">02 / 04</text>
+ <text x="66" y="189" font-family="Arial,sans-serif" font-weight="800" font-size="49" fill="#6456a6">Практика</text>
+ <text x="66" y="231" font-family="Arial,sans-serif" font-size="24" fill="#6456a6" opacity=".85">Учитесь на реальных задачах</text>
+ <path d="M66 286h176" stroke="#6456a6" stroke-width="5" stroke-linecap="round" opacity=".3"/>
+ </svg>
