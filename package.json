@@ -1,0 +1,14 @@
+{
+  "name": "uchus-rf-exam-variant-5",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Портал записи на курсы Учусь.РФ — демонстрационный экзамен, вариант 5",
+  "type": "commonjs",
+  "engines": {"node": ">=22.13.0"},
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "test": "node --test tests/*.test.cjs"
+  },
+  "license": "UNLICENSED"
+}
