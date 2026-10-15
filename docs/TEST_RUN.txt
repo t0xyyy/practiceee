@@ -1,0 +1,48 @@
+TAP version 13
+# (node:3017) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: Подготовка сервера, ER-связей и программы курсов
+ok 1 - Подготовка сервера, ER-связей и программы курсов
+  ---
+  duration_ms: 43.129883
+  type: 'test'
+  ...
+# Subtest: Регистрация: валидация, уникальность, вход и защищённые маршруты
+ok 2 - Регистрация: валидация, уникальность, вход и защищённые маршруты
+  ---
+  duration_ms: 132.303232
+  type: 'test'
+  ...
+# Subtest: Запись на курс и защита данных
+ok 3 - Запись на курс и защита данных
+  ---
+  duration_ms: 11.89361
+  type: 'test'
+  ...
+# Subtest: Администратор: фильтры, изменение статуса и журнал изменений
+ok 4 - Администратор: фильтры, изменение статуса и журнал изменений
+  ---
+  duration_ms: 49.972593
+  type: 'test'
+  ...
+# Subtest: Отзыв разрешён только после завершения, повторное добавление запрещено
+ok 5 - Отзыв разрешён только после завершения, повторное добавление запрещено
+  ---
+  duration_ms: 4.566452
+  type: 'test'
+  ...
+# Subtest: Завершение сеанса и ограничение доступа
+ok 6 - Завершение сеанса и ограничение доступа
+  ---
+  duration_ms: 40.253761
+  type: 'test'
+  ...
+1..6
+# tests 6
+# suites 0
+# pass 6
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 431.679752

@@ -9,6 +9,7 @@ const tmp = fs.mkdtempSync(path.join(os.tmpdir(),'uchus-exam-'));
 const {server,db} = makeApp({dbPath:path.join(tmp,'test.sqlite')});
 let base;
 let studentCookie,adminCookie,newCookie,ownApp;
+const futureDate = `25.12.${new Date().getFullYear()+1}`;
 async function request(url,method='GET',data, cookie){
   const r=await fetch(base+url,{method,headers:{...(data===undefined?{}:{'Content-Type':'application/json'}),...(cookie?{Cookie:cookie}:{})},body:data===undefined?undefined:JSON.stringify(data)});
   const contentType=r.headers.get('content-type')||'';
@@ -47,9 +48,9 @@ test('Запись на курс и защита данных',async()=>{
   assert.equal(bad.status,400);
   const old=await request('/api/applications','POST',{courseId:courses[0].id,startDate:'01.01.2020',paymentMethod:'СБП'},newCookie);
   assert.equal(old.status,400);
-  const badPayment=await request('/api/applications','POST',{courseId:courses[0].id,startDate:'25.12.2027',paymentMethod:'Криптовалюта'},newCookie);
+  const badPayment=await request('/api/applications','POST',{courseId:courses[0].id,startDate:futureDate,paymentMethod:'Криптовалюта'},newCookie);
   assert.equal(badPayment.status,400);
-  const ok=await request('/api/applications','POST',{courseId:courses[0].id,startDate:'25.12.2027',paymentMethod:'Банковская карта'},newCookie);
+  const ok=await request('/api/applications','POST',{courseId:courses[0].id,startDate:futureDate,paymentMethod:'Банковская карта'},newCookie);
   assert.equal(ok.status,201);ownApp=ok.body.id;assert.equal(ok.body.status,'Новая');
   const my=await request('/api/applications','GET',undefined,newCookie);
   assert.ok(my.body.applications.some(a=>a.id===ownApp&&a.courseTitle==='Веб-разработка с нуля'));
