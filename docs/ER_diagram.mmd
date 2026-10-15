@@ -1,0 +1,14 @@
+erDiagram
+    USERS ||--o{ APPLICATIONS : creates
+    COURSES ||--o{ APPLICATIONS : selected_in
+    USERS ||--o{ REVIEWS : writes
+    APPLICATIONS ||--o| REVIEWS : has_at_most_one
+    USERS ||--o{ SESSIONS : authorized
+    USERS ||--o{ STATUS_HISTORY : changes
+    APPLICATIONS ||--o{ STATUS_HISTORY : records
+    USERS { int id PK; string login UK; string password_hash; string full_name; string phone; string email UK; string role; datetime created_at }
+    COURSES { int id PK; string code UK; string title; string category; string summary; string duration; string level; int price; string color; string icon; int is_active }
+    APPLICATIONS { int id PK; int user_id FK; int course_id FK; date start_date; string payment_method; string status; datetime created_at; datetime updated_at }
+    REVIEWS { int id PK; int application_id FK,UK; int user_id FK; int rating; string text; datetime created_at }
+    SESSIONS { string id PK; int user_id FK; int expires_at }
+    STATUS_HISTORY { int id PK; int application_id FK; int admin_id FK; string old_status; string new_status; datetime changed_at }
